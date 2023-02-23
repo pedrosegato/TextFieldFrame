@@ -38,17 +38,13 @@ public class TextFieldFrame extends JFrame {
         public void actionPerformed(ActionEvent event) {
             String string = "";
             if (event.getSource() == textField1) {
-                string = String.format("textField1: %s");
-                event.getActionCommand();
+                string = String.format("textField1: %s", event.getActionCommand());
             }  else if (event.getSource() == textField2) {
-                string = String.format("textField2: %s");
-                event.getActionCommand();
+                string = String.format("textField2: %s", event.getActionCommand());
             } else if (event.getSource() == textField3) {
-                string = String.format("textField3: %s");
-                event.getActionCommand();
+                string = String.format("textField3: %s", event.getActionCommand());
             } else if (event.getSource() == passwordField) {
-                string = String.format("passwordField: %s");
-                event.getActionCommand();
+                string = String.format("passwordField: %s", event.getActionCommand());
             }
 
             JOptionPane.showMessageDialog(null, string);
